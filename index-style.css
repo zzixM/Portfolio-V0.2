@@ -1,0 +1,83 @@
+body{
+    margin: 0px 0px;
+}
+.sect{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 0px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title-hero{
+    background: #352F44;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.page-title{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: #5C5470;
+    border-radius: 5px;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.page-title-para{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.upper{
+    text-transform: uppercase;
+}
+.large{
+    font-size: 5rem;
+}
+.mid-large{
+    font-size: 2.5rem;
+}
+.mid{
+    font-size: 1.9rem;
+}
+.introduction-hero{
+    background: #5C5470;
+}
+.primary-headings{
+    font-family: 'Inria Serif', serif;
+    color: #B9B4C7;
+}
+.secondary-headings{
+    color: #FAF0E6;
+    font-family: 'Inria Serif', serif;
+}
+.primary-para{
+    font-family: 'PT Serif', serif;
+    color: #FAF0E6;
+}
+#flex-inner{
+    width: 80%;
+    height: 70%;
+    background: #5C5470;
+    background-image: url(./assets/images/white-mountain.jpg);
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+#title-heading{
+    margin: 0px 0px;
+}
+#title-subheading{
+    margin: 5px 0px;
+}
+#para-title{
+    margin: 5px 0px;
+}
