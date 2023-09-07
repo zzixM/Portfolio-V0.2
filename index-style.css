@@ -1,6 +1,55 @@
+html{
+    margin: 0px 0px;
+}
 body{
     margin: 0px 0px;
 }
+
+.topnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+    width: 100vw;
+    background-color: #B9B4C7;
+}
+.nav-logo{
+    display: flex;
+    margin-left: 5%;
+}
+#dev-logo{
+    height: 5rem;
+    width: 5rem;
+}
+#logo-heading{
+    margin-left: 1rem;
+}
+.primary-nav{
+    margin: 1% 1%;
+    text-align: center;
+}
+.push-right{
+    margin-left: auto;
+}
+.topnav a{
+    color: #FAF0E6;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: #5C5470;
+    color: #000000;
+}
+.topnav a.active{
+    background-color: #5C5470;
+    color: #FAF0E6;
+}
+.topnav a.active:hover{
+    background-color: #B9B4C7;
+    color: #000000;
+}
+
 .sect{
     width: 100vw;
     height: 100vh;
@@ -19,7 +68,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
+    
 }
 .page-title{
     text-align: left;
@@ -32,6 +81,8 @@ body{
     grid-row-end: 3;
 }
 .page-title-para{
+    display: flex;
+    flex-direction: column;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -49,6 +100,9 @@ body{
 .mid{
     font-size: 1.9rem;
 }
+.small{
+    font-size: 0.9rem;
+}
 .introduction-hero{
     background: #5C5470;
 }
@@ -65,8 +119,8 @@ body{
     color: #FAF0E6;
 }
 #flex-inner{
-    width: 80%;
-    height: 70%;
+    width: 70%;
+    height: 60%;
     background: #5C5470;
     background-image: url(./assets/images/white-mountain.jpg);
     border-radius: 20px;
@@ -80,4 +134,43 @@ body{
 }
 #para-title{
     margin: 5px 0px;
+}
+#ux-ui-subhead{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#ux-ui-para{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #5C5470;
+    border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+    .page-title-para{
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #flex-inner{
+        height: 80%;
+    }
+    #ux-ui-subhead{
+        background-color: #5C5470;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #ux-ui-para{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #5C5470;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
 }
