@@ -23,6 +23,8 @@ body{
 }
 #logo-heading{
     margin-left: 1rem;
+    min-width: fit-content;
+    
 }
 .primary-nav{
     margin: 1% 1%;
@@ -83,7 +85,7 @@ body{
 .page-title-para{
     display: flex;
     flex-direction: column;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -99,6 +101,9 @@ body{
 }
 .mid{
     font-size: 1.9rem;
+}
+.mid-small{
+    font-size: 1.2rem;
 }
 .small{
     font-size: 0.9rem;
@@ -145,6 +150,30 @@ body{
     padding: 5px;
     background-color: #5C5470;
     border-radius: 5px;
+    max-width: 50%;
+}
+
+@media (max-width: 1000px) {
+    .primary-nav a{
+        font-size: 1.2rem;
+        padding: 5px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 900px){
+    .nav-logo {
+        display: flex;
+        margin-left: 1%;
+    }
+    #logo-heading{
+        margin-left: 0px;
+    }
+    .primary-nav a{
+        font-size: 1.2rem;
+        padding: 5px;
+        margin: 0px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -172,5 +201,13 @@ body{
         background-color: #5C5470;
         border-radius: 5px;
         padding: 10px 20px;
+    }
+    .topnav{
+        flex-direction: column;
+    }
+    .primary-nav a{
+        font-size: 0.9rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
