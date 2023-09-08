@@ -24,7 +24,6 @@ body{
 #logo-heading{
     margin-left: 1rem;
     min-width: fit-content;
-    
 }
 .primary-nav{
     margin: 1% 1%;
@@ -39,7 +38,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
-.topnav a:hover{
+.primary-nav a:hover{
     background-color: #5C5470;
     color: #000000;
 }
