@@ -26,7 +26,7 @@ body{
     min-width: fit-content;
 }
 .primary-nav{
-    margin: 1% 1%;
+    margin: auto 1%;
     text-align: center;
 }
 .push-right{
@@ -62,6 +62,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .title-hero{
     background: #352F44;
 }
@@ -89,6 +95,9 @@ body{
     grid-row-start: 3;
     grid-row-end: 4;
 }
+.introduction-hero{
+    background: #5C5470;
+}
 .upper{
     text-transform: uppercase;
 }
@@ -107,9 +116,7 @@ body{
 .small{
     font-size: 0.9rem;
 }
-.introduction-hero{
-    background: #5C5470;
-}
+
 .primary-headings{
     font-family: 'Inria Serif', serif;
     color: #B9B4C7;
@@ -151,22 +158,62 @@ body{
     border-radius: 5px;
     max-width: 50%;
 }
-
-@media (max-width: 1000px) {
+#introduction-content{
+    width: 80%;
+    height: 80%;
+    padding: 5px;
+    border: 2px solid #FAF0E6;
+}
+#introduction-heading{
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+#introduction-para-container{
+    width: 60%;
+}
+#introduction-para{
+    padding: 0px 50px;
+}
+@media (max-width: 1200px) {
+    #introduction-para-container{
+        width: 70%;
+    }
     .primary-nav a{
         font-size: 1.2rem;
         padding: 5px;
         margin: 0px;
     }
+
+}
+
+@media (max-width: 1000px) {
+    #introduction-para-container{
+        width: 80%;
+    }
+    .primary-nav a{
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+    #introduction-heading{
+        font-size: 1.9rem;
+    }
+    #introduction-para{
+        font-size: 1.2rem;
+    }
+    
 }
 
 @media (max-width: 900px){
+    .topnav{
+        flex-direction: column;
+    }
     .nav-logo {
         display: flex;
         margin-left: 1%;
     }
     #logo-heading{
         margin-left: 0px;
+        font-size: 2.5rem;
     }
     .primary-nav a{
         font-size: 1.2rem;
@@ -174,7 +221,7 @@ body{
         margin: 0px;
     }
     #title-heading{
-        font-size: 1.9rem;
+        font-size: 2.9rem;
     }
     #title-subheading{
         font-size: 1.2rem;
@@ -189,6 +236,10 @@ body{
 }
 
 @media (max-width: 650px) {
+    .page-title{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
     .page-title-para{
         display: flex;
         flex-direction: column;
@@ -221,5 +272,18 @@ body{
         font-size: 0.9rem;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    #introduction-heading{
+        text-decoration: underline;
+    }
+    #introduction-para-container{
+        width: 90%;
+    }
+    #introduction-para{
+        padding: 0px 50px;
+        font-size: 0.9rem;
     }
 }
