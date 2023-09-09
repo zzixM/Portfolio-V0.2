@@ -247,6 +247,9 @@ body{
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
+        background-color: #5C5470;
+        border-radius: 5px;
+        width: 60%;
     }
     #flex-inner{
         height: 80%;
