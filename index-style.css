@@ -21,7 +21,7 @@ body{
     height: 5rem;
     width: 5rem;
 }
-#logo-heading{
+.logo-heading{
     margin-left: 1rem;
     min-width: fit-content;
 }
@@ -279,7 +279,7 @@ body{
         display: flex;
         margin-left: 1%;
     }
-    #logo-heading{
+    .logo-heading{
         margin-left: 0px;
         font-size: 2.5rem;
     }
