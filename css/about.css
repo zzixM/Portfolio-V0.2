@@ -73,10 +73,16 @@ body{
 .about-section{
     background-color: #352F44;
 }
+.alt-about-section{
+    background-color: #B9B4C7;
+}
 .about-wrapper{
     width: 80%;
     height: 80%;
     border: 5px solid #B9B4C7;
+}
+.alt-about-wrapper{
+    border: 5px solid #352F44;
 }
 .about-para-container{
     width: 50%;
