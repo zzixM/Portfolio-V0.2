@@ -1,2 +1,2 @@
 planed update:
-    format (contact.html) contact me page 
+    format (info.html) info page 
