@@ -149,10 +149,13 @@ body{
         margin: 0px;
     }
     .sc-heading{
-        font-size: 1.9rem;
+        font-size: 2.5rem;
     }
     .sc-para{
-        font-size: 1.2rem;
+        font-size: 1.9rem;
+    }
+    .about-para-container{
+        width: 80%;
     }
 }
 
@@ -160,7 +163,8 @@ body{
     .primary-nav a{
         font-size: 1.2rem;
         margin: 0px;
-    }
+    }    
+
 }
 
 @media (max-width: 900px){
@@ -184,7 +188,7 @@ body{
         font-size: 1.9rem;
     }
     .sc-para{
-        font-size: 0.8rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -208,5 +212,23 @@ body{
     }
     .footernav {
         flex-direction: column;
+    }
+    .sc-heading{
+        font-size: 1.9rem;
+        margin-bottom: 1%;
+    }
+    .sc-para{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 500px){
+    .about-para-container{
+        width: 90%;
+    }
+    .sc-heading{
+        font-size: 1.9rem;
+    }
+    .sc-para{
+        font-size: 1.2rem;
     }
 }
