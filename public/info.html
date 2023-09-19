@@ -4,19 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/info.css">
 </head>
+
 <body>
-    <div>
-        <h1>
-            You are a bit early!
-        </h1>
-        <p>
+    <div class="topnav">
+        <div class="nav-logo">
             <a href="../index.html">
-                This page is under construction. 
-                head back to home page here.
+                <img class="dev-logo" src="../assets/images/dev-logo.png" alt="Developer Logo - Image">
             </a>
-        </p>
-        
+            
+            <h2 class="upper mid-large secondary-headings" id="logo-heading">zzixm dev</h2>
+        </div>
+        <nav class="primary-nav push-right mid primary-para">
+            <a class="active mid primary-para" href="../index.html">Home</a> |
+            <a class="mid primary-para" href="../public/about.html">About</a> |
+            <a class="mid primary-para" href="../public/contact.html">Contact Me</a> |
+            <a class="mid primary-para" href="../public/projects.html">Prodjects</a> |
+            <a class="mid primary-para" id="nav-item-end" href="../public/experience.html">Experience</a>
+        </nav>
     </div>
+
+    <section class="info-section sect flex-container-col">
+        <div class="info-wrapper flex-container-col">
+            <h1 class="mid-large secondary-headings sc-heading">Infomation about this site</h1>
+            <div class="info-para-container">
+                <p class="info-para mid primary-para sc-para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nunc ut maximus dolor, sit amet dapibus nibh. Phasellus bibendum tincidunt diam vel dictum. 
+                    Vivamus sit amet felis sem. Morbi accumsan eleifend auctor. 
+                    Morbi est lorem, sagittis convallis urna at, efficitur tincidunt lacus. 
+                    In eros ante, consequat eu vestibulum in, fringilla in erat. 
+                    In eu quam quis dolor volutpat vulputate eget ac velit.
+                    Etiam nunc diam, volutpat et aliquet sed, tempor nec elit.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="footernav">
+        <div class="nav-logo">
+            <a href="#">
+                <img class="dev-logo" id="footer-logo" src="../assets/images/dev-logo.png" alt="Developer Logo - Image">
+            </a>
+            <h2 class="logo-heading upper mid-large secondary-headings">zzixm dev</h2>
+        </div>
+        <div class="footer-coppyright push-right">
+            <p class="mid primary-para sc-para">© 2023 zzixM Dev, </p>
+        </div>
+    </div>
+
 </body>
+
 </html>
