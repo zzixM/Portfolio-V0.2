@@ -1,5 +1,7 @@
 html{
     margin: 0px 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 body{
     margin: 0px 0px;
@@ -31,6 +33,9 @@ body{
 }
 .push-right{
     margin-left: auto;
+}
+.push-left{
+    margin-right: auto;
 }
 .topnav a{
     color: #FAF0E6;
@@ -227,7 +232,13 @@ body{
 #footer-logo{
     margin-top: 20%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1660px) {
+    .image-galleries-content{
+        height: 250px;
+        width: 350px;
+    }
+}
+@media (max-width: 1250px) {
     #introduction-para-container{
         width: 70%;
     }
@@ -384,4 +395,35 @@ body{
         width: 250px;
     }
 
+}
+@media (width < 650px) {
+    .nav-logo{
+        flex-direction: column;
+    }
+    .primary-nav{
+        width: 80vw;
+    }
+    .mid{
+        font-size: 0.8rem;
+    }
+    .image-galleries-content{
+        height: 5vh;
+        width: 10vh;
+    }
+    #logo-brand{
+        font-size: 2.0rem;
+    }
+    #title-heading{
+        font-size: 1.0rem;
+    }
+    #title-subheading{
+        font-size: 0.8rem;
+    }
+    #para-title{
+        font-size: 1.0rem;
+    }
+    
+    #footer-heading{
+        font-size: 0.2rem;
+    }
 }
