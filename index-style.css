@@ -317,6 +317,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
     .recent-project{
         margin-top: 5%;
@@ -397,21 +398,15 @@ body{
 
 }
 @media (width < 650px) {
-    .nav-logo{
-        flex-direction: column;
-    }
-    .primary-nav{
-        width: 80vw;
-    }
     .mid{
         font-size: 0.8rem;
     }
     .image-galleries-content{
-        height: 5vh;
-        width: 10vh;
+        height: 28vh;
+        width: 90vw;
     }
-    #logo-brand{
-        font-size: 2.0rem;
+    .footer-coppyright{
+        text-align: left;
     }
     #title-heading{
         font-size: 1.0rem;
@@ -422,8 +417,10 @@ body{
     #para-title{
         font-size: 1.0rem;
     }
-    
+    #footer-logo{
+        margin: 2%
+    }
     #footer-heading{
-        font-size: 0.2rem;
+        display: none;
     }
 }
